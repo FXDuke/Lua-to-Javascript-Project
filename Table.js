@@ -1,4 +1,4 @@
-// Lines: 32
+// Lines: 25
 // Size: < 1 Kb
 //
 // How to use:
