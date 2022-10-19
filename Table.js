@@ -1,4 +1,4 @@
-// Lines: 33
+// Lines: 32
 // Size: < 1 Kb
 //
 // How to use:
@@ -28,7 +28,6 @@ class Table {
       this.Size = this.__Data.length-1
     }
     remove = function(index) {
-      this.__Data[index] = null
       for (let newIndex = index+1;newIndex<this.__Data.length;newIndex++) {
         this.__Data[newIndex-1] = this.__Data[newIndex]
       }
