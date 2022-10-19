@@ -1,3 +1,16 @@
+// Lines: 35
+// Size: < 1 Kb
+//
+// How to use:
+//
+// var myTableName = new Table (or var myTableName = new Table(data)
+//
+// myTableName.add({x: 10,y: 20},{x: 20,y: 40})
+//
+// myTableName.pairs((i,v) => {
+//  console.log("Index " + i.toString() + ":\tX: " + v.x.toString() + " | Y: " + v.y.toString() + ";"
+//})
+
 class Table {
     __Data = []
     Size = 0
