@@ -1,4 +1,4 @@
-// Lines: 35
+// Lines: 33
 // Size: < 1 Kb
 //
 // How to use:
@@ -22,10 +22,8 @@ class Table {
       }
     }
     add = function(...data) {
-      if (data!=null) {
-        for (const _item of data) {
-          this.__Data.push(_item)
-        }
+      for (const _item of data) {
+        this.__Data.push(_item)
       }
       this.Size = this.__Data.length-1
     }
