@@ -17,14 +17,11 @@ class Table {
     pairs = function(newFunction) {
       let __Index = 0
       for (const data of this.__Data) {
-        newFunction(__Index,data)
-        __Index++
+        newFunction(__Index++,data)
       }
     }
     add = function(...data) {
-      for (const _item of data) {
-        this.__Data.push(_item)
-      }
+      this.__Data.push(...data)
       this.Size = this.__Data.length-1
     }
     remove = function(index) {
@@ -35,11 +32,7 @@ class Table {
       this.Size = this.__Data.length-1
     }
     constructor(...data) {
-      if (data!=null) {
-        for (const _item of data) {
-          this.__Data.push(_item)
-        }
-        this.Size = this.__Data.length-1
-      }
+      this.__Data.push(...data)
+      this.Size = this.__Data.length-1
     }
 }
