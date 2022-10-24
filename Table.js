@@ -10,8 +10,7 @@
 // myTableName.pairs((i,v) => {
 //  console.log("Index " + i.toString() + ":\tX: " + v.x.toString() + " | Y: " + v.y.toString() + ";"
 //})
-
-class Table {
+export class Table {
     __Data = []
     Size = 0
     pairs = function(newFunction) {
@@ -22,17 +21,17 @@ class Table {
     }
     add = function(...data) {
       this.__Data.push(...data)
-      this.Size = this.__Data.length-1
+      this.Size = this.__Data.length
     }
     remove = function(index) {
       for (let newIndex = index+1;newIndex<this.__Data.length;newIndex++) {
         this.__Data[newIndex-1] = this.__Data[newIndex]
       }
       this.__Data.length -= 1
-      this.Size = this.__Data.length-1
+      this.Size = this.__Data.length
     }
     constructor(...data) {
       this.__Data.push(...data)
-      this.Size = this.__Data.length-1
+      this.Size = this.__Data.length
     }
 }
